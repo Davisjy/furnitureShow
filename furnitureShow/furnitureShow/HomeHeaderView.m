@@ -38,7 +38,7 @@
 
         // 设置整体内容的内部偏移
         bgButton.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
-        
+        bgButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         self.bgBtn = bgButton;
         [_bgBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }

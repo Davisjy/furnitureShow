@@ -11,6 +11,7 @@
 		CC80055C1BF5A8FB00356C3E /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC80055B1BF5A8FB00356C3E /* MoreViewController.m */; };
 		CC80055E1BF5AEEF00356C3E /* zhanhuifuwu.html in Resources */ = {isa = PBXBuildFile; fileRef = CC80055D1BF5AEEF00356C3E /* zhanhuifuwu.html */; };
 		CC8005621BF5C2C100356C3E /* SuggestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8005611BF5C2C100356C3E /* SuggestViewController.m */; };
+		CC8005661BF5C94C00356C3E /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8005651BF5C94C00356C3E /* GuideViewController.m */; };
 		CCA6F6681BF5700C00875D98 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA6F6371BF5700C00875D98 /* MJRefreshAutoFooter.m */; };
 		CCA6F6691BF5700C00875D98 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA6F6391BF5700C00875D98 /* MJRefreshBackFooter.m */; };
 		CCA6F66A1BF5700C00875D98 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA6F63B1BF5700C00875D98 /* MJRefreshComponent.m */; };
@@ -78,6 +79,8 @@
 		CC80055D1BF5AEEF00356C3E /* zhanhuifuwu.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zhanhuifuwu.html; sourceTree = "<group>"; };
 		CC8005601BF5C2C100356C3E /* SuggestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestViewController.h; sourceTree = "<group>"; };
 		CC8005611BF5C2C100356C3E /* SuggestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestViewController.m; sourceTree = "<group>"; };
+		CC8005641BF5C94C00356C3E /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
+		CC8005651BF5C94C00356C3E /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
 		CCA6F6361BF5700C00875D98 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		CCA6F6371BF5700C00875D98 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		CCA6F6381BF5700C00875D98 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -209,6 +212,15 @@
 				CC8005611BF5C2C100356C3E /* SuggestViewController.m */,
 			);
 			name = SuggestVC;
+			sourceTree = "<group>";
+		};
+		CC8005631BF5C94300356C3E /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				CC8005641BF5C94C00356C3E /* GuideViewController.h */,
+				CC8005651BF5C94C00356C3E /* GuideViewController.m */,
+			);
+			name = Guide;
 			sourceTree = "<group>";
 		};
 		CCA6F6341BF5700C00875D98 /* MJRefresh */ = {
@@ -391,6 +403,7 @@
 		CCF6A3561BF4A9F100EF7D5F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CC8005631BF5C94300356C3E /* Guide */,
 				CC80055F1BF5C2B100356C3E /* SuggestVC */,
 				CC8005561BF5A75F00356C3E /* DetailVC */,
 				CCA6F67E1BF5713000875D98 /* WebVC */,
@@ -629,6 +642,7 @@
 				CCA6F6741BF5700C00875D98 /* MJRefreshNormalHeader.m in Sources */,
 				CCA6F66A1BF5700C00875D98 /* MJRefreshComponent.m in Sources */,
 				CCF6A37B1BF4B8F200EF7D5F /* AFHTTPRequestOperation.m in Sources */,
+				CC8005661BF5C94C00356C3E /* GuideViewController.m in Sources */,
 				CCF6A3601BF4AFD000EF7D5F /* MainViewController.m in Sources */,
 				CCA6F67A1BF5700C00875D98 /* UIView+MJExtension.m in Sources */,
 				CCF6A3811BF4B8F200EF7D5F /* AFURLRequestSerialization.m in Sources */,
@@ -781,6 +795,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = furnitureShow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -791,6 +806,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = furnitureShow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
