@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class Message;
 @interface MessageTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *title;
 @property (weak, nonatomic) IBOutlet UILabel *text;
 @property (weak, nonatomic) IBOutlet UILabel *time;
+
+@property (nonatomic, strong) Message *message;
 
 @end

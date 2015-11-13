@@ -7,6 +7,7 @@
 //
 
 #import "MessageTableViewCell.h"
+#import "Message.h"
 
 @implementation MessageTableViewCell
 
@@ -18,6 +19,14 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void)setMessage:(Message *)message
+{
+    _message = message;
+    self.title.text = message.title;
+    self.text.text = message.content;
+    self.time.text = message.time;
 }
 
 @end

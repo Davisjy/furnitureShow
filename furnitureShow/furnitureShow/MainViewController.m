@@ -60,9 +60,15 @@
     [self presentViewController:resultVC animated:YES completion:nil];
     
 }
-- (IBAction)register:(UIButton *)sender {
+- (IBAction)regis:(UIButton *)sender {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *registerVC = [sb instantiateViewControllerWithIdentifier:@"register"];
+    [self presentViewController:registerVC animated:YES completion:nil];
 }
 - (IBAction)more:(UIButton *)sender {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *registerVC = [sb instantiateViewControllerWithIdentifier:@"more"];
+    [self presentViewController:registerVC animated:YES completion:nil];
 }
 
 #pragma mark - scroll view delegate

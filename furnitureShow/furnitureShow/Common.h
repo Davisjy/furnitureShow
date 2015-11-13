@@ -17,6 +17,11 @@
 
 #define    KMessageUrl    @"http://web.you07.com/zhanhui/zhanhui/notifyOne?"
 
+#define    KMessageDetail @"http://web.you07.com/zhanhui/zhanhui/notify?"
 
+#define    KRegisUrl      @"http://web.you07.com/zhanhui/zhanhui/zhtDengji?"
 
+#define    KUpdateUrl     @"http://web.you07.com/zhanhui/iosUpdate.html"
+
+#define    KSuggestUrl    @"http://web.you07.com/zhanhui/zhanhui/feed?"
 #endif

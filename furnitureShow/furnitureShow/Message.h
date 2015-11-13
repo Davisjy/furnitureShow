@@ -13,6 +13,7 @@
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *time;
 @property (nonatomic, strong) NSString *content;
+@property (nonatomic, strong) NSString *num;
 
 - (instancetype)initMessageWithDictionary:(NSDictionary *)dict;
 + (instancetype)messageWithDictionary:(NSDictionary *)dict;

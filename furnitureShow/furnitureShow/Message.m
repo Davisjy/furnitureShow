@@ -15,7 +15,8 @@
     if (self = [super init]) {
         self.title = dict[@"title"];
         self.content = dict[@"content"];
-        self.title = dict[@"time"];
+        self.time = dict[@"time"];
+        self.num = dict[@"id"];
     }
     return self;
 }
